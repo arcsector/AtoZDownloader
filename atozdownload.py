@@ -17,7 +17,7 @@ response = requests.get(URL)
 content = response.content
 soup = bs4.BeautifulSoup(content, features='html.parser')
 
-# <a href="../common/download.asp?type=soundcard&amp;downloadCode=HNBWJBVXPWDUVI&amp;uploadID=18658" target="_blank">Animals As Leaders - Gordian Naught.wav</a>
+# <a href="../common/download.asp?type=soundcard&amp;downloadCode=XXXXXXXXXXX&amp;uploadID=XXXXXX" target="_blank">BAND - SONG.wav</a>
 for item in soup.find_all('li'):
     item: bs4.Tag
     for child in item.children:
